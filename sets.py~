@@ -1,5 +1,6 @@
 def union( a, b ):
-    return [ x for x in a if x not in b ] + b
+    thing = [ x for x in b if x not in a ]
+    return
     
 print( union( [1,2,3,4], [2,4,6,8] ) )
     
@@ -14,9 +15,7 @@ def diff( u, a ):
 print( diff( [1,2,3,4], [2,4,6,8] ) )
 
 def symDiff( a, b ):
-    return diff( union( a, b ), inter( a, b ) )
-
-print( symDiff( [1,2,3,4], [2,4,6,8] ) )
+    return
 
 def product( a, b ):
     return [ [x,y] for x in a for y in b ]
